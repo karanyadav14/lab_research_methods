@@ -18,8 +18,7 @@ data$item <- as.factor(data$item)
 m <- lmer(TFT ~ syll_len+word_len+word_complex+IC+SC+Word_Similarity
           +(1|subj),
           data = data,
-
-)
+         )
 
 
 summary(m)
